@@ -18,8 +18,8 @@
 
 </head>
 
-<body ng-controller="HomeController">
-
+<body>
+    <div id="topo"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -31,13 +31,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">LemaDay</a>
+                
+                <a class="navbar-brand" href="#topo" class="scroll">LemaDay</a>
+                
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Palestras</a>
+                        <a href="#palestras" class="scroll">Palestras</a>
+                    </li>
+                    <li>
+                        <a href="#topo" class="scroll">Palestras</a>
                     </li>
                    
                 </ul>
@@ -81,57 +86,58 @@
         <!-- /.row -->
 
         <hr>
-
-        <div class="row">
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="img/palestrantes/luiz_bruno.jpg" alt="O que aprendemos com as startups?">
-                <h2>O que aprendemos com as startups?</h2>
-                <p>Conheça as principais idéias por trás das empresas de tecnologia que estão mudando o mundo. O que é fundamental e o que é apenas modismo?</p>
-                <p>
-                    <strong>
-                        <p align="center">
-                            Luiz Bruno Vianna
-                        </p>
-                    </strong>
-                </p>
+        <div id="palestras">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-circle img-responsive img-center" src="img/palestrantes/luiz_bruno.jpg" alt="O que aprendemos com as startups?">
+                    <h2>O que aprendemos com as startups?</h2>
+                    <p>Conheça as principais idéias por trás das empresas de tecnologia que estão mudando o mundo. O que é fundamental e o que é apenas modismo?</p>
+                    <p>
+                        <strong>
+                            <p align="center">
+                                Luiz Bruno Vianna
+                            </p>
+                        </strong>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle img-responsive img-center" src="img/palestrantes/carlos.png" alt="Wordpress para iniciantes">
+                    <h2>Wordpress para iniciantes</h2>
+                    <p>A palestra abordará pontos iniciais de Wordpress, passando primeiro por um panorama sobre o que são os Sistemas de Gerenciamento de Conteúdo, instalação do XAMPP e do Wordpress, conceitos de: Temas, Plugins, Posts e Páginas e Widgets, a conversa também irá mostrar a estrutura de separação dos códigos de um tema de Wordpress.</p>
+                    <p>
+                        <strong>
+                            <p align="center">
+                                Carlos Alberto Oliveira
+                            </p>
+                        </strong>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+                    <h2>Mercado de jogos</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <p>
+                        <strong>
+                            <p align="center">
+                                Danilo Gila Santana
+                            </p>
+                        </strong>
+                    </p>
+                </div>
+                
             </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="img/palestrantes/carlos.png" alt="Wordpress para iniciantes">
-                <h2>Wordpress para iniciantes</h2>
-                <p>A palestra abordará pontos iniciais de Wordpress, passando primeiro por um panorama sobre o que são os Sistemas de Gerenciamento de Conteúdo, instalação do XAMPP e do Wordpress, conceitos de: Temas, Plugins, Posts e Páginas e Widgets, a conversa também irá mostrar a estrutura de separação dos códigos de um tema de Wordpress.</p>
-                <p>
-                    <strong>
-                        <p align="center">
-                            Carlos Alberto Oliveira
-                        </p>
-                    </strong>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
-                <h2>Mercado de jogos</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p>
-                    <strong>
-                        <p align="center">
-                            Danilo Gila Santana
-                        </p>
-                    </strong>
-                </p>
-            </div>
-            
-        </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center" src="img/palestrantes/paulo_victor.jpg" alt="Realidade Virtual">
-                <h2>Realidade Virtual</h2>
-                <p>O que é Realidade Virtual? Quais são suas áreas de atuação? Abordaremos algumas tendências de mercado, qual o objetivo e seus impactos no futuro.</p>
-                <p>
-                    <strong>
-                        <p align="center">
-                            Paulo Victor de Sousa
-                        </p>
-                    </strong>
-                </p>
+                <div class="col-sm-4">
+                    <img class="img-circle img-responsive img-center" src="img/palestrantes/paulo_victor.jpg" alt="Realidade Virtual">
+                    <h2>Realidade Virtual</h2>
+                    <p>O que é Realidade Virtual? Quais são suas áreas de atuação? Abordaremos algumas tendências de mercado, qual o objetivo e seus impactos no futuro.</p>
+                    <p>
+                        <strong>
+                            <p align="center">
+                                Paulo Victor de Sousa
+                            </p>
+                        </strong>
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -151,10 +157,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/angular.js"></script>
-
+    <!-- Custom javascript for page -->
     <script src="js/main.js"></script>
-    <script src="js/controller/home.js"></script>
+
 </body>
 
 </html>
