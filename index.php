@@ -37,9 +37,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Palestras</a>
+                        <a href="#">Pdalestras</a>
                     </li>
-                   
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -142,7 +142,45 @@
         <hr>
 
     </div>
-   
+
+    <div id="inscricao" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Inscrição</h4>
+              </div>
+              <div class="modal-body">
+                <div class="alert alert-warning" ng-show="{{cadastrado}}">Usuário cadastrado com sucesso!</div>
+                
+                <form action="inscricao.php" method="post" novalidate>
+                    <div class="form-group">
+                        <label>Nome completo:</label>
+                        <input type="text" class="form-control" ng-model="nome" name="nome">
+                    </div>
+                    <div class="form-group">
+                        <label>Sobrenome:</label>
+                        <input type="text" class="form-control" ng-model="sobrenome" name="sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" ng-model="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" class="btn btn-primary" id="email" 
+                        ng-click="cadastrar()" value="Cadastrar">
+                    </div>
+                </form>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar
+                </button>
+              </div>
+            </div>
+        </div>
+    </div>
     <!-- /.container -->
 
     <!-- jQuery -->
